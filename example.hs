@@ -1,0 +1,1 @@
+data BoolList a = BoolList [(a,Bool)]
