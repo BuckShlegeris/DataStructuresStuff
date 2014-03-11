@@ -2,7 +2,7 @@ DataStructureMagicThing
 ======
 
 
-This is software which finds the generating function of a data structure. For an explanation, [see here](http://math.ucr.edu/home/baez/week144.html) (Ctrl-F for "To figure out a formula"). Alternatively, read my combinatorics example below.
+This is software which finds the generating function of a data structure. For a definition of "generating function", [see here](http://math.ucr.edu/home/baez/week144.html) (Ctrl-F for "To figure out a formula"). Alternatively, read my combinatorics example below.
 
 I wrote it to accompany my [talk](http://www.youtube.com/watch?v=OB73WLf1k9c) at CompCon about the algebraic behaviour of data structures. I use this package about halfway through that talk.
 
