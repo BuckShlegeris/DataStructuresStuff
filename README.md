@@ -42,7 +42,7 @@ Power series expansion:
 
 ## "Application" to combinatorics
 
-Suppose we have two bigger bins and two smaller bins, and four basketballs. The bigger bins fit up to two basketballs, but the smaller bins only fit one. We want to know how many different ways we can put all the basketballs in bins. See for example this ~~shitty drawing~~ useful illustration:
+Suppose we have two bigger bins and two smaller bins, and four basketballs. The bigger bins fit up to two basketballs, but the smaller bins only fit one. We want to know how many different ways we can put all the basketballs in bins. Take a look at this ~~shitty drawing~~ useful illustration:
 
 ![shitty drawing](http://i.imgur.com/STnv04c.png)
 
