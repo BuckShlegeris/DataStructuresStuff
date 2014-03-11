@@ -48,7 +48,7 @@ Suppose we have two bigger bins and two smaller bins, and four basketballs. The 
 
 We can represent a big bin like this:
 
-```
+```haskell
 data BigBin a = BigBinWithTwoThings a a | BigBinWithOneThing a | EmptyBigBin
 ```
 
@@ -62,3 +62,44 @@ a**2 + a + 1
 Power series expansion:
 a**2 + a + 1
 ```
+
+That's looking good: a `BigBin` has 0, 1, or 2 things.
+
+Similarly, a little bin can be defined as:
+
+```haskell
+data LittleBin a = LittleBinWithOneThing a | EmptyLittleBin
+```
+
+This is isomorphic to the `Maybe` type.
+
+Now, the entire system of two little bins and one big bin can be represented like this:
+
+```haskell
+data Containers a = Containers (BigBin a) (BigBin a) (LittleBin a) (LittleBin a)
+```
+
+So let's run the program again:
+
+```
+$ python generatingFunctions.py
+Analysing BigBin:
+Equation solution:
+a**2 + a + 1
+Power series expansion:
+a**2 + a + 1
+
+Analysing LittleBin:
+Equation solution:
+a + 1
+Power series expansion:
+a + 1
+
+Analysing Containers:
+Equation solution:
+(a + 1)**2*(a**2 + a + 1)**2
+Power series expansion:
+a**6 + 4*a**5 + 8*a**4 + 10*a**3 + 8*a**2 + 4*a + 1
+```
+
+This tells us that there's 1 way to fit 6 balls in these containers, 4 ways to fit 5, 8 ways to fit 4, and so on. We read the answer to our question straight off that power series: there are eight different ways to fit four balls in those containers.
