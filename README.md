@@ -2,7 +2,7 @@ DataStructureMagicThing
 ======
 
 
-This is software which finds the generating function of a data structure. For example, [see here]([http://math.ucr.edu/home/baez/week144.html) (Ctrl-F for "To figure out a formula").
+This is software which finds the generating function of a data structure. For an explanation, [see here](http://math.ucr.edu/home/baez/week144.html) (Ctrl-F for "To figure out a formula"). Alternatively, read my combinatorics example below.
 
 I wrote it to accompany my [talk](http://www.youtube.com/watch?v=OB73WLf1k9c) at CompCon about the algebraic behaviour of data structures. I use this package about halfway through that talk.
 
@@ -40,7 +40,7 @@ Power series expansion:
 1 + a + 2*a**2 + 5*a**3 + 14*a**4 + 42*a**5 + 132*a**6 + 429*a**7 + 1430*a**8 + 4862*a**9 + 16796*a**10 + 58786*a**11 + O(a**12)
 ```
 
-## "Application" to combinatorics
+## Application to combinatorics
 
 Suppose we have two bigger bins and two smaller bins, and four basketballs. The bigger bins fit up to two basketballs, but the smaller bins only fit one. We want to know how many different ways we can put all the basketballs in bins. Take a look at this ~~shitty drawing~~ useful illustration:
 
