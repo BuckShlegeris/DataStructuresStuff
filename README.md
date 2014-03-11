@@ -19,7 +19,7 @@ You need to run setup.sh once before you use the code.
 
 ## Example
 
-`
+```bash
 $ python generatingFunctions.py
 Analysing Maybe:
 Equation solution:
@@ -38,4 +38,4 @@ Equation solution:
 (-sqrt(-4*a + 1) + 1)/(2*a)
 Power series expansion:
 1 + a + 2*a**2 + 5*a**3 + 14*a**4 + 42*a**5 + 132*a**6 + 429*a**7 + 1430*a**8 + 4862*a**9 + 16796*a**10 + 58786*a**11 + O(a**12)
-`
+```
