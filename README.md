@@ -19,7 +19,7 @@ You need to run setup.sh once before you use the code.
 
 ## Example
 
-`
+```bash
 $ python generatingFunctions.py
 Analysing Maybe:
 Equation solution:
@@ -38,4 +38,27 @@ Equation solution:
 (-sqrt(-4*a + 1) + 1)/(2*a)
 Power series expansion:
 1 + a + 2*a**2 + 5*a**3 + 14*a**4 + 42*a**5 + 132*a**6 + 429*a**7 + 1430*a**8 + 4862*a**9 + 16796*a**10 + 58786*a**11 + O(a**12)
-`
+```
+
+## "Application" to combinatorics
+
+Suppose we have two bigger bins and two smaller bins, and four basketballs. The bigger bins fit up to two basketballs, but the smaller bins only fit one. We want to know how many different ways we can put all the basketballs in bins. See for example this ~~shitty drawing~~ useful illustration:
+
+![shitty drawing](http://i.imgur.com/STnv04c.png)
+
+We can represent a big bin like this:
+
+```
+data BigBin a = BigBinWithTwoThings a a | BigBinWithOneThing a | EmptyBigBin
+```
+
+Let's stick that in the `dataExamples.hs` file:
+
+```
+$ python generatingFunctions.py
+Analysing BigBin:
+Equation solution:
+a**2 + a + 1
+Power series expansion:
+a**2 + a + 1
+```
